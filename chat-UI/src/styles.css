@@ -1,0 +1,15 @@
+html{
+  background-color: #1c7722;
+  font-family: Calibri Light;
+  color: whitesmoke;
+}
+h2{
+  color:white;
+}
+
+li{
+  list-style: none;
+}
+button{
+  width: 125px;
+}

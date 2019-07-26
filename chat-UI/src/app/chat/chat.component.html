@@ -1,0 +1,23 @@
+<div class="container">
+  <div class="row center-align">
+    <div class="card-panel green darken-4 col s9">
+      <div class="container-1">
+        <h2 class="card-panel green darken-4">CHAT</h2>
+        <li *ngFor="let msg of chat">
+          {{msg.userName}}:
+          {{msg.text}}
+        </li>
+      </div>
+      <div class="col s10">
+        <input type="text" id="textField" placeholder="write something.." [(ngModel)]="message">
+      </div>
+      <div class="col s1">
+        <button type="button" class="btn waves-effect blue lighten-3" (click)="sendMessage(message)">send</button>
+      </div>
+    </div>
+    <div class="col s3 card-panel green darken-3">
+      <h2 class="card-panel green darken-3">USERLIST</h2>
+      <app-user-list></app-user-list>
+    </div>
+  </div>
+</div>

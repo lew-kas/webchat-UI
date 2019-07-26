@@ -1,0 +1,12 @@
+<title>Welcome</title>
+<div class="container">
+  <div class="row center-align">
+    <div class="card-panel green darken-4">
+      <h2 class="card-panel green darken-4">Login</h2>
+      <input type="text" class="text-accent-1"  placeholder="username" [(ngModel)]="name">
+      <input type="password" placeholder="password" [(ngModel)]="passw">
+      <button class="btn waves-effect blue lighten-3" type="button" (click)="checkLoginInfo(name,passw)">enter chat
+      </button>
+    </div>
+  </div>
+</div>
